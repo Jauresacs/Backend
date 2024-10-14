@@ -1,0 +1,5 @@
+JobBoard/.vs/
+# Ignore les fichiers générés par la compilation
+JobBoard/obj/
+JobBoard/bin/
+

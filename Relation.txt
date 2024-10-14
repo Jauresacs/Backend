@@ -1,0 +1,38 @@
+un candidat peut avoir plusieurs compétences propre a lui, une liste d'expériences professionnelles, j'ai defini les compétences et les expériences pro comme des classes a part. Un candidat peut postuler a plusieurs offres. 
+
+une entreprise peut avoir plusieurs recruteurs.
+
+un recruteur est lie a une entreprise et peut poster plusieurs annonces.
+
+Une candidature est liée a un candidat et une offre d'emploie
+
+une offre d'emploi regroupe une entreprise et son recruteur.
+
+Relation Entreprise -> Recruteur : Chaque recruteur est lié à une entreprise par EntrepriseId.
+Relation User -> Experience : Un User (Candidat) peut avoir plusieurs Experience professionnelles.
+Relation User -> Candidature : Un User (Candidat) peut soumettre plusieurs candidatures.
+Relation Recruteur -> Job : Un Recruteur peut publier plusieurs offres d'emploi.
+Relation Candidature -> Job : Une Candidature est liée à une offre d'emploi spécifique.
+Relation Skills -> User : Un User (Candidat) peut avoir plusieurs compétences.
+
+
+Structure:
+
+JobBoard/
+├── Controllers/
+│   ├── UsersController.cs
+│   ├── CandidatsController.cs
+│   ├── RecruteursController.cs
+├── Views/
+│   ├── Users/
+│   │   ├── Login.cshtml
+│   │   ├── Register.cshtml
+│   ├── Candidats/
+│   │   ├── Dashboard.cshtml
+│   ├── Recruteurs/
+│   │   ├── Dashboard.cshtml
+│   ├── Shared/
+│   │   ├── _Layout.cshtml
+│   │   ├── _ValidationScriptsPartial.cshtml
+├── wwwroot/
+
